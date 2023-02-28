@@ -1,0 +1,144 @@
+.auth {
+    margin-top: -28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.auth__spacer {
+    margin-top: 60px;
+}
+.auth__form-spacing {
+    margin-top: 32px;
+}
+.auth__form {
+    border-radius: 20px;
+}
+.k-window-titlebar {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-style: none;
+    background-color: inherit;
+}
+.auth__title {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: black;
+}
+.auth__error {
+    border-color: red;
+}
+.auth__input {
+    width: 303px;
+    height: 50px;
+    background: rgba(217, 217, 217, 0.1);
+    border: 1px solid #000000;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 7px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+}
+.auth__options {
+    margin-top: 38px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000000;
+    cursor: pointer;
+}
+.auth__warning {
+    padding-top: 8px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #ff9600;
+    cursor: pointer;
+}
+.auth__options:last-child {
+    margin-top: 10px;
+}
+.auth__server-err {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auth__server-err img {
+    width: 100px;
+    height: 100px;
+}
+.auth__server-err h2 {
+    margin-top: 20px;
+}
+.auth__server-err h5 {
+    margin-top: 20px;
+}
+.auth__restore {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auth__restore__sent {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.auth__restore__sent h2 {
+    margin-top: 20px;
+}
+.auth__restore__sent h5 {
+    margin-top: 7px;
+}
+.auth__restore__sent div {
+    margin-top: 50px;
+    text-align: center;
+}
+.auth__restore__reg {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input.k-input,
+textarea.k-textarea {
+    padding-left: 20px;
+}
+.k-floating-label-container.k-empty > .k-label {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.35);
+}
+.k-floating-label-container.k-empty > .k-label {
+    top: 28px;
+    left: 21px;
+}
+.k-floating-label-container > .k-label,
+.k-floating-label-container.k-focus > .k-label {
+    top: -8px;
+    left: 10px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 36px;
+    color: rgba(0, 0, 0, 0.35);
+}
+.k-form-error,
+.k-text-error,
+.k-form-field-error .k-label {
+    position: absolute;
+}

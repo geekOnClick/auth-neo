@@ -1,0 +1,289 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  height: 100vh;
+}
+
+html,
+body {
+  min-height: 100%;
+  background-color: #f5f4ff;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #1c1c1c;
+  min-width: 480px;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+input {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+.container {
+  padding: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  flex: 0 0 auto;
+}
+
+main {
+  flex: 1 1 auto;
+}
+
+footer {
+  flex: 0 0 auto;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #f9f5e3 inset !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #808080 !important;
+}
+
+.App {
+  text-align: center;
+  background-color: #2c3746;
+}
+
+.App-logo {
+  height: 300px;
+  width: 300px;
+  pointer-events: none;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-btn {
+  padding: 8px 45px;
+  cursor: pointer;
+}
+
+.app-text {
+  margin-top: 30px;
+  color: #ff6358;
+}
+
+.auth {
+  margin-top: -28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth__spacer {
+  margin-top: 60px;
+}
+
+.auth__form-spacing {
+  margin-top: 32px;
+}
+
+.auth__form {
+  border-radius: 20px;
+}
+
+.k-window-titlebar {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-style: none;
+  background-color: inherit;
+}
+
+.auth__title {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: black;
+}
+
+.auth__error {
+  border-color: red;
+}
+
+.auth__input {
+  width: 303px;
+  height: 50px;
+  background: rgba(217, 217, 217, 0.1);
+  border: 1px solid #000000;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.auth__options {
+  margin-top: 38px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #000000;
+  cursor: pointer;
+}
+
+.auth__warning {
+  padding-top: 8px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  color: #ff9600;
+  cursor: pointer;
+}
+
+.auth__options:last-child {
+  margin-top: 10px;
+}
+
+.auth__server-err {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth__server-err img {
+  width: 100px;
+  height: 100px;
+}
+
+.auth__server-err h2 {
+  margin-top: 20px;
+}
+
+.auth__server-err h5 {
+  margin-top: 20px;
+}
+
+.auth__restore {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth__restore__sent {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth__restore__sent h2 {
+  margin-top: 20px;
+}
+
+.auth__restore__sent h5 {
+  margin-top: 7px;
+}
+
+.auth__restore__sent div {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.auth__restore__reg {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input.k-input,
+textarea.k-textarea {
+  padding-left: 20px;
+}
+
+.k-floating-label-container.k-empty > .k-label {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.k-floating-label-container.k-empty > .k-label {
+  top: 28px;
+  left: 21px;
+}
+
+.k-floating-label-container > .k-label,
+.k-floating-label-container.k-focus > .k-label {
+  top: -8px;
+  left: 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.35);
+}
+
+.k-form-error,
+.k-text-error,
+.k-form-field-error .k-label {
+  position: absolute;
+}/*# sourceMappingURL=style.css.map */

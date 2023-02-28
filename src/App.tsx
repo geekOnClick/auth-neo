@@ -1,30 +1,19 @@
 import React from 'react';
-import { Button } from '@progress/kendo-react-buttons';
-import kendoka from './kendoka.svg';
-import './App.scss';
+import '@progress/kendo-theme-default/dist/all.css';
+import { Routes, Route } from 'react-router-dom';
+import { Home } from 'pages/Home';
+import './assets/lib/bootstrap/css/bootstrap-reboot.css';
+import './assets/lib/bootstrap/css/bootstrap.css';
+import './assets/styles/style.scss';
 
 function App() {
-  const handleClick = React.useCallback(() => {
-    window.open('https://www.telerik.com/kendo-react-ui/components/', '_blank');
-  }, []);
-
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={kendoka} className="App-logo" alt="kendoka" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <Button
-          themeColor={'primary'}
-          size={"large"}
-          onClick={handleClick}
-        >
-          Learn KendoReact
-        </Button>
-      </header>
-    </div>
-  );
+    return (
+        <div className='App wrapper h-100'>
+            <Routes>
+                <Route path='/' element={<Home />} />
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
